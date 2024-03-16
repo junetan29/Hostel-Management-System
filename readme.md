@@ -1,4 +1,4 @@
-## Demo
+# Demo
 The application can run with XAMPP on localhost. Configure XAMPP and start the Apache server and MySQL server. Then follow the steps:
 1. Import the fyp.sql file under sql folder using phpMyAdmin SQL.
 2. Import all the folders into “C:/xampp/htdocs/jty1”.
@@ -21,7 +21,7 @@ Email: demo1@demo.com
 Password: 123.Qwer
 
 
-## System Features
+# System Features
 
 #### Tenant
 - Can register and log in to our system
@@ -67,6 +67,6 @@ Password: 123.Qwer
 - Can logout
 
 
-## Design
+# Design
 - jQuery
 - Bootstrap
