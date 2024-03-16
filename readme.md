@@ -23,7 +23,7 @@ Password: 123.Qwer
 
 # System Features
 
-#### Tenant
+### Tenant
 - Can register and log in to our system
 - Can view or edit profile
 - Can reset password
@@ -37,7 +37,7 @@ Password: 123.Qwer
 - Can do rating after they rent the hostel
 - Can logout
 
-#### Hostel Owner
+### Hostel Owner
 - Can register and log in to our system
 - Can view or edit profile
 - Can reset password
@@ -48,7 +48,7 @@ Password: 123.Qwer
 - Can delete account
 - Can logout
 
-#### Administrator
+### Administrator
 - Can log in to system
 - Can add new admin
 - Can add coupon for tenant to have discount during payment
