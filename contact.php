@@ -75,7 +75,7 @@
 														<span class="fa fa-phone"></span>
 													</div>
 													<div class="text">
-														<p><span>Phone:</span> <br><a href="tel:+601151036496">011 5103 6496</a></p>
+														<p><span>Phone:</span> <br><a href="tel:+60112345678">0112345678</a></p>
 													</div>
 											</div>
 										</div>
@@ -85,7 +85,7 @@
 														<span class="fa fa-paper-plane"></span>
 													</div>
 													<div class="text">
-														<p><span>Email:</span> <br><a href="mailto:1181201016@student.mmu.edu.my">1181201016@student.mmu.edu.my</a></p>
+														<p><span>Email:</span> <br><a href="mailto:demo@demo.com">demo@demo.com</a></p>
 													</div>
 											</div>
 										</div>

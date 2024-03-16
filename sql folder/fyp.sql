@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 16, 2024 at 10:04 AM
+-- Generation Time: Mar 16, 2024 at 10:54 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.24
 
@@ -75,7 +75,9 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`Admin_id`, `Name`, `Email`, `Password`, `Pic`, `Contact`, `Gender`, `AdminType`, `AdminIsDelete`, `AdminDel`) VALUES
-(1, 'Demo', 'demo@demo.com', '123.Qwer', 'demo.jpg', '011234567', 'Female', 'SuperAdmin', 0, 0);
+(1, 'Demo1', 'Demo1@demo.com', '123.Qwer', 'demo1.jpg', '0112345678', 'Female', 'SuperAdmin', 0, 0),
+(2, 'Demo2', 'Demo2@demo.com', '123.Qwer', 'demo.jpg', '0123456789', 'Male', 'SuperAdmin', 0, 0),
+(3, 'Demo3', 'Demo3@demo.com', '123.Qwer', 'demo.png', '0111234567', 'Female', 'SuperAdmin', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -106,7 +108,7 @@ INSERT INTO `appointment` (`Id`, `HosId`, `BookId`, `StudId`, `OwnId`, `Date`, `
 (1, 1, 1, 1, 1, '2020-10-08', '5 pm', 'Hi i would like to visit these two hostel', 1, 1, 0, 1),
 (2, 8, 2, 1, 1, '2020-10-08', '5 pm', 'Hi i would like to visit these two hostel', 1, 1, 0, 1),
 (3, 3, 5, 2, 1, '2020-10-29', '4 pm', 'Hi i would like to view this hostel', 0, 0, 0, 0),
-(4, 1, 9, 1, 1, '2020-10-17', '2 pm', 'Please bring me to visit the hostel thank you!', 0, 1, 0, 1),
+(4, 1, 9, 1, 1, '2020-10-17', '2 pm', 'Please bring me to visit the hostel thank you!', 0, 1, 0, 0),
 (5, 2, 11, 5, 1, '2020-10-29', '6 pm', 'Hi', 0, 0, 0, 0),
 (6, 3, 12, 5, 1, '2020-10-29', '6 pm', 'Hi', 0, 0, 0, 0),
 (7, 7, 13, 5, 1, '2020-10-16', '12 pm', 'Hi', 0, 1, 0, 0),
@@ -426,7 +428,7 @@ CREATE TABLE `hostel` (
 --
 
 INSERT INTO `hostel` (`ID`, `Own_id`, `HosName`, `HosPrice`, `Cat_id`, `OriRoom`, `TotRoom`, `HosDetails`, `Image1`, `Image2`, `Image3`, `Image4`, `Image5`, `HostelIsDelete`, `Status`) VALUES
-(1, 1, 'No 245 Block A', 360, 1, 6, 5, '<p>4 bed rooms with 2 single beds per rooms<br />Fully furnitured<br />2 washrooms with Water Heater</p>', 'Picture293.png', 'Picture294.png', 'Picture295.png', 'Picture296.png', 'Picture297.png', 0, 3),
+(1, 1, 'No 245 Block A', 360, 1, 6, 5, '<p>4 bed rooms with 2 single beds per rooms<br />Fully furnitured<br />2 washrooms with Water Heater ff</p>', 'Picture293.png', 'Picture294.png', 'Picture295.png', 'Picture296.png', 'Picture297.png', 0, 3),
 (2, 1, 'No 284, Block A', 250, 2, 6, 6, '<p>4 bed rooms with 2 single beds per rooms<br />Fully furnitured<br />2 washrooms with water heater</p>', 'Picture180.png', 'Picture181.png', 'Picture182.png', 'Picture183.png', 'Picture184.png', 0, 1),
 (3, 2, 'A-10-B', 250, 3, 5, 5, '<p>Utility not included</p>\r\n<p>5-10 minutes walking distance to MMU</p>\r\n<p>Priority for student</p>', 'Picture58.png', 'Picture59.png', 'Picture60.png', 'Picture61.png', 'Picture62.png', 0, 1),
 (4, 2, 'No 93 Block D', 300, 4, 8, 5, '<p>Near to the AEON Ayer Keroh</p>\r\n<p>7 mins walk to MMU</p>', 'Picture224.png', 'Picture220.png', 'Picture221.png', 'Picture222.png', 'Picture223.png', 0, 1),
@@ -477,7 +479,7 @@ CREATE TABLE `owner` (
 --
 
 INSERT INTO `owner` (`owner_id`, `Admin_id`, `owner_name`, `owner_ic`, `gender`, `ownerPassport`, `owner_phnum`, `owner_currentaddress`, `StaId`, `postcode`, `owner_email`, `owner_pass`, `owner_image`, `owner_icpic`, `HOwner_nationality`, `HOwner_race`, `OwnerIsDelete`, `AdminDel`, `OwnerStatus`, `secu_pin`, `secu_date`, `Que1`, `Ans1`, `Que2`, `Ans2`, `Que3`, `Ans3`) VALUES
-(1, 1, 'Rowan Sebastian Atkinson', '550106125821', 'Male', '', '01121345678', '111, Jalan XXX', 4, 83492, 'bean@gmail.com', '123.Qwer', 'PROD-Mr-Beans-Holiday-Photocall.jpg', 'WhatsApp Image 2020-09-07 at 1.29.01 AM.jpeg', '', 'Chinese', 0, 0, 1, NULL, NULL, 1, '254', 2, '8536', 3, 'Pay fong'),
+(1, 1, 'Rowan Sebastian Atkinson', '550106125821', 'Male', '', '0163298536', '254, Jalan semabok', 4, 75050, 'bean@gmail.com', '123.Qwer', 'PROD-Mr-Beans-Holiday-Photocall.jpg', 'WhatsApp Image 2020-09-07 at 1.29.01 AM.jpeg', 'Malaysian', 'Chinese', 0, 0, 1, NULL, NULL, 1, '254', 2, '8536', 3, 'Pay fong'),
 (2, 0, 'Obama', '640108088888', 'Male', '', '0125652685', 'Taman Satria Jaya', 11, 93350, 'obama@hotmail.com', '123.Qwer', '59c387d3ba785e34910e27b4.jpg', 'Barack-Obama-Malaysia-Identification-Card.jpg', 'Malaysian', 'Malay', 0, 0, 0, NULL, NULL, 5, 'XiaoHei', 2, '6257', 9, 'Broccoli'),
 (3, 1, 'kara wong', '', 'Female', 'K0123456', '0152320220', 'jalan success', 2, 85600, 'kara@gmail.com', '123.Qwer', '0.jpg', '440px-Biodata_page_of_Singapore_Passport.jpg', 'Non-Malaysian', 'chinese', 0, 0, 1, NULL, NULL, 1, '1234', 2, '8119', 3, 'jj'),
 (4, 0, 'Lim Mei Hua', '', 'Female', 'L0123456', '0152360222', 'jalan hisup', 4, 86666, 'mei@gmail.com', '123.Qwer', 'download.jpg', '640px-ROC_National_Without_Registration_Passport_Datapage.jpg', 'Non-Malaysian', 'chinese', 0, 0, 0, NULL, NULL, 1, '1234', 2, '8119', 3, 'jj');
@@ -866,7 +868,7 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `coupon`
