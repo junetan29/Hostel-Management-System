@@ -1,0 +1,73 @@
+#hos {border:1px solid white 
+	}
+#hos1{border:1px solid white;
+	  border-radius:10px;
+	  box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
+	  background-color:white;
+	  width:900px;
+	  margin-left:100px;
+	  float:left;
+	 }
+#hos2{border:1px solid white;
+	  border-radius:10px;
+	  box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
+	  width:400px;
+	  margin-right:100px;
+	  float:right;
+	  background-color:white;
+	   margin-bottom:20px;
+	 }
+#hos3{border:1px solid white;
+	  border-radius:10px;
+	  box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
+	  background-color:white;
+	  width:900px;
+	  margin-left:100px;
+	  margin-top :20px;
+	  margin-bottom:20px;
+	  float:left;
+	 }
+	 
+* {
+    box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left, .right {
+  width: 30%;
+}
+
+.middle {
+  width: 40%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#in{width:30px; 
+	height:70px; 
+	font-size:30px; 
+	text-align:center; 
+	border:1px solid white; 
+   }
+#num{width:100px; 
+	 height:70px; 
+	 font-size:30px; 
+	 text-align:center; 
+	 border:1px solid white;
+	}
+#de {width:30px; 
+	 height:70px;
+	 font-size:30px; 
+	 text-align:center; 
+	 border:1px solid white;
+	}
